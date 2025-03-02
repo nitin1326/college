@@ -8,6 +8,11 @@ background-color: #031D2E;
     color:#FF7010;
 }
 
+header{
+    background-color: #07273C;   
+    width: 100vw; 
+}
+
 
 .navbar {
     background-color: #07273C;
@@ -31,13 +36,17 @@ background-color: #031D2E;
     display: flex;
     flex: 3;
     list-style: none;
+    width: max-content;
     align-items: center;
     justify-content: space-around;
-  
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin: 0;
+    padding: 0;
 
     gap: 10px;
-    flex-shrink: none;
-    margin: 0;
+    margin-right: 10px;
+
+    
 }
 
 a{
@@ -63,6 +72,7 @@ a{
    height: fit-content;
    display: flex;
    min-width: 450px;
+   margin-left: 20px;
   background-color:#031D2E;
 }
 
@@ -96,6 +106,8 @@ a{
 .home-screan img{
   margin: auto;
   height: 95%;
+  margin-left: 30px;
+
 
 
 }
@@ -186,7 +198,16 @@ footer{
     
 }
 
+footer p{
+    width: 60%;
+    margin: auto;
+}
+
 @media(max-width:700px){
+
+    .navbar .menu{
+        width: 100%;
+    }
 
     .summary {
         display: flex;
@@ -216,7 +237,7 @@ footer{
     .summary-img {
         width: 40%;
         height: 90px;
-        background: white;
+        background: blue;
         box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
         padding: 10px;
         border-radius: 10px; /* Rounded corners for image box */
