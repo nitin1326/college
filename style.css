@@ -189,7 +189,8 @@ a{
 }
 
 footer{
-    height: 40vh;
+    height: fit-content;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,14 +200,29 @@ footer{
 }
 
 footer p{
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 @media(max-width:700px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     .navbar .menu{
         width: 100%;
+
+    }
+
+    .navbar span img{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-screan{
+        width: 80%;
     }
 
     .summary {
